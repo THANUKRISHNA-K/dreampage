@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+         margin: 0;
+         background-color: rgb(2, 2, 59);
+    }
+    #main{
+        width: 100%;
+        height:100%;
+        position:absolute;
+        overflow:hidden;
+    }
+    #box1{
+        width:535px;
+        height:630px;
+        background-image:url("images/appcol\ \(2\).png") ;
+        position:absolute;
+        bottom:-100%;
+        left:30%;
+        animation: anim 2s forwards, anim2 3s forwards 3s;
+        background-repeat: no-repeat;
+         
+    }
+    #box1::after{
+        content:'';
+        position: absolute;
+        width: 535px;
+        height:630px;
+        background-image: url("images/appcol\ \(1\).png");
+        left:0px;
+        z-index:-1;
+        background-repeat: no-repeat;  
+        
+    }
+    @keyframes anim{
+        from{
+            bottom:-100%;
+        }
+        to{
+            bottom:5%;
+        }
+    }
+    @keyframes anim2{
+        from{
+            left:30%;
+            width:530px;
+        }
+        to{
+            width:0px;
+            left:60%;
+
+        }
+       
+    }
+    #box2{
+            width: auto;
+            height:auto;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: cornsilk;
+            font-size: 6em;
+            font-weight:500;
+            line-height: 130px;
+            position:absolute;
+            top: 250px;
+            left:100px;
+            overflow:hidden;
+
+            
+        }
+        #text{
+            position:relative;
+            left:-100%;
+            animation: anim3 2s forwards 3s;
+
+        }
+        @keyframes anim3{
+            from{
+                left:-100%;
+            }
+            to{
+                left: 0%;
+            }
+        }
+        #box3{
+            overflow: hidden;
+
+        }
+        #container{
+            width: 100%;
+            position:absolute;
+            top:-100%;
+            animation:anim4 2s forwards 2.5s;
+
+        }
+        #logo{
+            float:left;
+            margin-left:30px ;
+            margin-top: 20px;
+        }
+        #logo img{
+            width:150px;
+              
+        }
+        #menu{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:14px;
+            color: cornsilk;
+            letter-spacing:2px;
+            margin-right: 150px;
+            margin-top: 10px;
+            float:right;
+
+
+        }
+        #menu ul{
+            list-style:none;
+        }
+        #menu ul li{
+            display:inline-block;
+            margin-left: 100px;
+            font-size: 16px;
+        }
+        @keyframes anim4{
+            from{
+                top:-100%;
+            }
+            to{
+                top:0%;
+            }
+        }
+ #menu a:hover{
+          font-size: 30px;
+          
+          cursor: pointer;
+        }
+        /*media queries  */
+       
+ @media screen and (max-width: 768px){
+     
+    
+    #menu a{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:15px;
+            display:inline-block;
+            margin-left: -120px;
+            color: cornsilk;
+
+        }
+        #menu {
+            top:-50px;
+        }
+        #menu a:hover{
+          font-size: 16px;
+          
+          cursor: pointer;
+        }
+        
+    #box1{
+        width:250px;
+        height:315px;
+        background-image:url("images/imgonline.png") ;
+        position:absolute;
+        top:150px;
+        left:35px;
+        animation:ani 2s forwards 2s, ani2 3s forwards ;
+        background-repeat: no-repeat;
+         
+    }
+    #box1::after{
+        content:'';
+        position: absolute;
+        width:250px;
+        height:315px;
+        background-image: url("images/imgonline-com-ua-resize-9wC7qF5xHkK.png");
+        left:0px;
+        z-index:-1;
+        background-repeat: no-repeat;  
+        
+    }
+    #box2{
+            width: auto;
+            height:100px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: cornsilk;
+            font-size: 45px;
+            font-weight:500;
+            line-height: 50px;
+            position:absolute;
+            top: 500px;
+            left:10px;
+            overflow:hidden;
+
+            
+        }
+        
+        
+      
+    }
+    @keyframes ani2{
+        from{
+            left:0%;
+            width:530px;
+        }
+        to{
+            width:0px;
+            left:60px;
+
+        }
+    }
+        @keyframes ani{
+        from{
+            left:0%;
+            width:530px;
+        }
+        to{
+            width:0px;
+            left:60px;
+
+        }
+        
+
+       
+    }    
+
+
+
+</style>
+<body>
+    <div id="main">
+        <div id="box1"></div>
+
+        <div id="box2">
+            <div id="text">KRISH OFFICIAL<br> <div style="color: crimson;">I DESIGN</div> </div>
+        </div>
+
+         <div id="box3">
+             <div id="container">
+                 <div id="logo">
+                    <img src="./images/output-onlinepngtools (2).png">
+                 </div>
+                 <div id="menu">
+                     <ul>
+                         <li> <a href="./watch.html"  style="color: rgb(146, 228, 39); text-decoration: none;">REFRESH</a></li>
+                         <li > <a href="./band.html" style="color: rgb(101, 238, 208); text-decoration: none;">BANDS</a></li>
+
+                     </ul>
+                 </div>
+                
+             </div>
+         </div>
+    </div>
+    
+</body>
+</html>
